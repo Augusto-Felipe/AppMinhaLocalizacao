@@ -13,6 +13,7 @@
 		50C379BC298E89D3009895D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C379BA298E89D3009895D8 /* Main.storyboard */; };
 		50C379BE298E89D4009895D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C379BD298E89D4009895D8 /* Assets.xcassets */; };
 		50C379C1298E89D4009895D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C379BF298E89D4009895D8 /* LaunchScreen.storyboard */; };
+		50C379CA298E8A06009895D8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C379C9298E8A06009895D8 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		50C379BD298E89D4009895D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C379C0298E89D4009895D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50C379C2298E89D4009895D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C379C9298E8A06009895D8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C379CA298E8A06009895D8 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				50C379B3298E89D3009895D8 /* AppMinhaLocalizacao */,
 				50C379B2298E89D3009895D8 /* Products */,
+				50C379C8298E8A06009895D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				50C379C2298E89D4009895D8 /* Info.plist */,
 			);
 			path = AppMinhaLocalizacao;
+			sourceTree = "<group>";
+		};
+		50C379C8298E8A06009895D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50C379C9298E8A06009895D8 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +314,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipeaugusto.AppMinhaLocalizacao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipeaugusto.AppMinhaLocalizacao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
